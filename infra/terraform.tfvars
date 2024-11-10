@@ -8,9 +8,9 @@ cidr_public_subnet   = ["10.0.1.0/24", "10.0.2.0/24"]
 cidr_private_subnet  = ["10.0.3.0/24", "10.0.4.0/24"]
 eu_availability_zone = ["us-west-2a", "us-west-2b"]
 
-public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD1oUvSHqNgtCH1gwulbq3Z3VkXBlM5yJJMeK2v4PKO5/g2/Sm11O+j7RLeGZAeZ60G114ZLmyK2qh2SfRh+Z9OtQcMZz0m3vpKM4LllRpjHe0sEWARUMW/MbnEW92EY8vLIz4KmJ3MTzb6+lTEcBGp3OqAYgfYOHnbILW8h0GW3N0Oi03M664f9l+aI4B6SMrtf9OpbgKoI8C+6YF2/2/A7GRyxU3fashtISNouaW0xKTtGZHTwSsYhfNd0uWkR9wIytaV6VDjYRUpgpn2O0ZVdISC9gBEMSAqb5a/oCYGcnMHjEERAdq/QNRWBHQZ4KxK0LRAVX6+Tf2W7j7UF5RrB5mHcCf4/kjQiGbdZ3GC6pY/0QIwaO7wSDJV425ftTw/fuagQYDpCt1A/AoSvqKlxdrDBwMiYd3vRJi3ztcFZMclZiR7X/uYL5lxOF1NpBZ9WgZSCaPtp7ZJtJCs/3nw600paZiaOiqROYH+FpPGGGN01SCDMVcy2IeVw8qmEt8= user@DESKTOP-06"
+public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwzSrpN9euKZnZU6uWGolPHWKnSHh9d0n+p+IXKdm0h7GnQsRFYpDuwBosRaq5ctBGxqsTVCjToOjwg9fiaiVMxSceR5F7otgsuCGXXpavsa2R9eAK5lhnOMNAjxBP60jV6Etkr+CsSRv4+AeE1/IrOixZSP+LrJMwkw09VLPSJOEJ2CmEj0cWPw0e+JbJCyc8ZcpY5hzN9nWQsJ/hj11UxLZ1AegXr3wkh0lFwifBy18XflhqtApvN85SkoeN2uAfhFTJiFm3UmVsm3Iv9QDD8zlZccA/1owrC6/1YFgAteWOh0IjGkwew0tN3huPQl5Qr88JgxQZzzar92YBQTj87sdn/sPGjbyfxFTBMaUVEpXJka7MFdaXwQu08nZptqcS/PLR1g1X7nyIfTdC0CxDdyEXyJsswsGFQA9CpkN6V/AAEE4bxWjb51M8pFYuSQB39CpuGoaRBBZmfY8B/6rqjU1HukNU8vBb74DL67gXlAVi865Rte50nEtUEt1fWUE= user@DESKTOP-06"
 
-ec2_ami_id     = "ami-0866a3c8686eaeeba"
+ec2_ami_id     = "ami-0da424eb883458071"
 
 ec2_user_data_install_apache = ""
 
