@@ -9,7 +9,7 @@ variable "user_data_install_apache" {}
 variable "ec2_sg_name_for_python_api" {}
 
 output "ssh_connection_string_for_ec2" {
-  value = format("%s%s", "ssh -i C:/Users/USER/.ssh/ec2-rsa ubuntu@", aws_instance.dev_proj_1_ec2.public_ip) #password
+  value = format("%s%s", "ssh -i C:/Users/USER/.ssh/api_rsa ubuntu@", aws_instance.dev_proj_1_ec2.public_ip) #mymotherpassword
 }
 
 output "dev_proj_1_ec2_instance_id" {
@@ -35,7 +35,7 @@ resource "aws_instance" "dev_proj_1_ec2" {
   }
 }
 
-resource "aws_key_pair" "dev_proj_1_public_key" {
+resource "aws_key_pair" "dev_proj_11_public_key" {
   key_name   = "aws_key"
   public_key = var.public_key
 }
