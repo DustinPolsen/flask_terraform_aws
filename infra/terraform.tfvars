@@ -14,4 +14,4 @@ ec2_ami_id     = "ami-0866a3c8686eaeeba"
 
 ec2_user_data_install_apache = ""
 
-domain_name = "gotohigher.com"
+domain_name = "grayhightech.com"
