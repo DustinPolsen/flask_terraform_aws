@@ -33,7 +33,7 @@ resource "aws_subnet" "dev_proj_1_public_subnets" {
   availability_zone = element(var.eu_availability_zone, count.index)
 
   tags = {
-    Name = "dev-proj-public-subnet-${count.index + 1}"
+    Name = "dev-proj-west-public-subnet-${count.index + 1}"
   }
 }
 
@@ -45,7 +45,7 @@ resource "aws_subnet" "dev_proj_1_private_subnets" {
   availability_zone = element(var.eu_availability_zone, count.index)
 
   tags = {
-    Name = "dev-proj-private-subnet-${count.index + 1}"
+    Name = "dev-proj-west-private-subnet-${count.index + 1}"
   }
 }
 
@@ -53,7 +53,7 @@ resource "aws_subnet" "dev_proj_1_private_subnets" {
 resource "aws_internet_gateway" "dev_proj_1_public_internet_gateway" {
   vpc_id = aws_vpc.dev_proj_1_vpc_eu_central_1.id
   tags = {
-    Name = "dev-proj-1-west-igw"
+    Name = "dev-proj-west-1-west-igw"
   }
 }
 
@@ -65,7 +65,7 @@ resource "aws_route_table" "dev_proj_1_public_route_table" {
     gateway_id = aws_internet_gateway.dev_proj_1_public_internet_gateway.id
   }
   tags = {
-    Name = "dev-proj-1-public-rt"
+    Name = "dev-proj-west-1-public-rt"
   }
 }
 
@@ -81,7 +81,7 @@ resource "aws_route_table" "dev_proj_1_private_subnets" {
   vpc_id = aws_vpc.dev_proj_1_vpc_eu_central_1.id
   #depends_on = [aws_nat_gateway.nat_gateway]
   tags = {
-    Name = "dev-proj-1-private-rt"
+    Name = "dev-proj-west-1-private-rt"
   }
 }
 
